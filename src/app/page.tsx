@@ -13,13 +13,13 @@ const Home = () => {
           frontend architecture, to backend development, everything is 👌.
         </p>
       </header>
-      <h2>He's been building cool things for a while</h2>
+      <h2>He&rsquo;s been building cool things for a while</h2>
       <p>
         <strong>
           <em>A decade of experience and counting, actually.</em>
         </strong>
       </p>
-      <p>Here's some of the tech he's picked up along the way:</p>
+      <p>Here&rsquo;s some of the tech he&rsquo;s picked up along the way:</p>
       <ul>
         <li>
           <strong>Languages:</strong> Typescript, Javascript, Node, and the
@@ -35,7 +35,7 @@ const Home = () => {
         </li>
       </ul>
       <h3>And of course, the learning never stops</h3>
-      <p>Not to mention, there's more stuff he simply forgot to list!</p>
+      <p>Not to mention, there&rsquo;s more stuff he simply forgot to list!</p>
       <hr />
       <h2>Firespring, Creative Department</h2>
       <p>Full Stack Software Engineer</p>
@@ -47,7 +47,7 @@ const Home = () => {
       <p>Frontend Application Engineer</p>
       <h2>Freelance, Project engineering</h2>
       <p>Full Stack Project Engineer</p>
-      <h3>Now, he's back in New Zealand</h3>
+      <h3>Now, he&rsquo;s back in New Zealand</h3>
       <p>Where will he end up in Kiwiland?</p>
       <hr />
       <h2>
