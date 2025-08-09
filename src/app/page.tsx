@@ -1,3 +1,5 @@
+import { Button } from "@/components/ui/button";
+
 const Home = () => {
   return (
     <>
@@ -54,6 +56,7 @@ const Home = () => {
         Contact <em>mk</em>.codes
       </h2>
       <p>Here are some of the ways you can reach him.</p>
+      <Button>Email</Button>
     </>
   );
 };
