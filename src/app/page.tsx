@@ -1,3 +1,5 @@
+import * as React from 'react'
+
 import { Button } from '@/components/ui/button'
 
 const Home = () => {
@@ -16,7 +18,12 @@ const Home = () => {
         </p>
       </header>
       <h2>He&rsquo;s been building cool things for a while</h2>
-      <p className='hover:bg-primary/90 bg-primary text-primary-foreground shadow-xs'>
+      <p
+        className={`
+          bg-primary text-primary-foreground shadow-xs
+          hover:bg-primary/90
+        `}
+      >
         <strong>
           <em>A decade of experience and counting, actually.</em>
         </strong>

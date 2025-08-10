@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { ThemeProvider } from 'next-themes'
+
 import './globals.css'
 
 export const metadata: Metadata = {
@@ -17,7 +18,12 @@ const RootLayout = ({
       lang='en'
       suppressHydrationWarning
     >
-      <body className='prose dark:prose-invert prose-stone m-auto py-40 antialiased'>
+      <body
+        className={`
+          m-auto prose py-40 antialiased prose-stone
+          dark:prose-invert
+        `}
+      >
         <ThemeProvider
           attribute='class'
           defaultTheme='system'

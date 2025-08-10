@@ -1,4 +1,6 @@
-module.exports = {
+/** @type {import('prettier').Config & import('prettier-plugin-tailwindcss').PluginOptions} */
+
+export default {
   tabWidth: 2,
   semi: false,
   singleQuote: true,
@@ -37,7 +39,7 @@ module.exports = {
   importOrderParserPlugins: ['typescript', 'jsx', 'decorators-legacy'],
   importOrderMergeDuplicateImports: true,
   importOrderCombineTypeAndValueImports: true,
-  tailwindStyleSheet: './src/globals.css',
+  tailwindStyleSheet: './src/app/globals.css',
   tailwindAttributes: ['className'],
   tailwindFunctions: ['clsx', 'cn', 'cva'],
 }
