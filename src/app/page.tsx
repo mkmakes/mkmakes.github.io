@@ -1,6 +1,6 @@
 import * as React from 'react'
 
-import { Button } from '@/components/ui/button'
+import { PrimaryButton } from '@/components/ui/button/primary-button'
 
 const Home = () => {
   return (
@@ -18,12 +18,7 @@ const Home = () => {
         </p>
       </header>
       <h2>He&rsquo;s been building cool things for a while</h2>
-      <p
-        className={`
-          bg-primary text-primary-foreground shadow-xs
-          hover:bg-primary/90
-        `}
-      >
+      <p>
         <strong>
           <em>A decade of experience and counting, actually.</em>
         </strong>
@@ -63,7 +58,7 @@ const Home = () => {
         Contact <em>mk</em>.codes
       </h2>
       <p>Here are some of the ways you can reach him.</p>
-      <Button>Email</Button>
+      <PrimaryButton>Email</PrimaryButton>
     </>
   )
 }
