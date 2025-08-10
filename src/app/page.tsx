@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button";
+import { Button } from '@/components/ui/button'
 
 const Home = () => {
   return (
@@ -10,13 +10,13 @@ const Home = () => {
         <p>
           <strong>
             <em>mk</em>
-          </strong>{" "}
+          </strong>{' '}
           codes neat things with Typescript, Node, React, and Native too! From
           frontend architecture, to backend development, everything is 👌.
         </p>
       </header>
       <h2>He&rsquo;s been building cool things for a while</h2>
-      <p>
+      <p className='hover:bg-primary/90 bg-primary text-primary-foreground shadow-xs'>
         <strong>
           <em>A decade of experience and counting, actually.</em>
         </strong>
@@ -58,7 +58,7 @@ const Home = () => {
       <p>Here are some of the ways you can reach him.</p>
       <Button>Email</Button>
     </>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home
