@@ -1,9 +1,11 @@
 import type { Metadata } from 'next'
 import { ThemeProvider } from 'next-themes'
 
+import { ModeToggle } from '@/components/ui/mode-toggle'
+
 import './globals.css'
 
-export const metadata: Metadata = {
+const metadata: Metadata = {
   title: 'mk codes',
   description: 'mk codes, mk makes, mk builds',
 }
@@ -18,23 +20,27 @@ const RootLayout = ({
       lang='en'
       suppressHydrationWarning
     >
-      <body
-        className={`
-          m-auto prose py-40 antialiased prose-stone
-          dark:prose-invert
-        `}
-      >
+      <body className='relative antialiased'>
         <ThemeProvider
           attribute='class'
           defaultTheme='system'
           enableSystem
           disableTransitionOnChange
         >
-          {children}
+          <ModeToggle className='absolute top-0 right-0 p-10' />
+          <div
+            className={`
+              m-auto prose py-40 prose-stone
+              dark:prose-invert
+            `}
+          >
+            {children}
+          </div>
         </ThemeProvider>
       </body>
     </html>
   )
 }
 
+export { metadata }
 export default RootLayout
