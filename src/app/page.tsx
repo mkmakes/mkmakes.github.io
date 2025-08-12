@@ -1,12 +1,17 @@
 import * as React from 'react'
 
 import { PrimaryButton } from '@/components/ui/button/primary-button'
+import { GradientHeader } from '@/components/ui/gradient-header'
+import { ScrambledText } from '@/components/ui/scrambled-text'
 
 const Home = () => {
   return (
     <>
       <header>
-        <h1>mk.codes here</h1>
+        <GradientHeader>
+          {'> '}
+          <ScrambledText text='mk.codes here' />
+        </GradientHeader>
         <p>
           <strong>mk</strong> codes neat things with Typescript, Node, React,
           and Native too! From frontend architecture, to backend development,
