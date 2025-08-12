@@ -1,5 +1,6 @@
 'use client'
 
+import * as React from 'react'
 import type { ComponentProps } from 'react'
 import { Laptop, Moon, Sun } from 'lucide-react'
 import { useTheme } from 'next-themes'
