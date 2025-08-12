@@ -4,76 +4,78 @@
 
 @custom-variant dark (&:is(.dark *));
 
-:root {
-  --background: 20 20% 96%;
-  --foreground: 20 30% 20%;
-  --card: 20 20% 96%;
-  --card-foreground: 20 30% 20%;
-  --popover: 20 20% 96%;
-  --popover-foreground: 20 30% 20%;
-  --primary: 15 70% 50%;
-  --primary-foreground: 15 80% 98%;
-  --secondary: 30 80% 60%;
-  --secondary-foreground: 30 50% 20%;
-  --muted: 20 15% 85%;
-  --muted-foreground: 20 25% 50%;
-  --accent: 20 15% 85%;
-  --accent-foreground: 20 30% 20%;
-  --destructive: 0 75% 55%;
-  --destructive-foreground: 0 10% 95%;
-  --border: 20 20% 85%;
-  --input: 20 20% 85%;
-  --ring: 15 70% 50%;
-  --chart-1: 15 70% 50%;
-  --chart-2: 30 80% 60%;
-  --chart-3: 340 70% 65%;
-  --chart-4: 60 70% 50%;
-  --chart-5: 300 80% 55%;
+:root, .dark {
   --radius: 0.625rem;
-  --sidebar: 20 20% 93%;
-  --sidebar-foreground: 20 30% 38%;
-  --sidebar-primary: 15 70% 47%;
-  --sidebar-primary-foreground: 15 80% 100%;
-  --sidebar-accent: 20 15% 82%;
-  --sidebar-accent-foreground: 20 30% 20%;
-  --sidebar-border: 20 20% 82%;
-  --sidebar-ring: 15 70% 47%;
+}
+
+:root {
+  --background: 220 15% 95%;
+  --foreground: 210 10% 20%;
+  --card: 220 15% 95%;
+  --card-foreground: 210 10% 20%;
+  --popover: 220 15% 95%;
+  --popover-foreground: 210 10% 20%;
+  --primary: 204 60% 50%;
+  --primary-foreground: 204 80% 95%;
+  --secondary: 215 15% 80%;
+  --secondary-foreground: 210 25% 20%;
+  --muted: 215 10% 90%;
+  --muted-foreground: 210 15% 40%;
+  --accent: 215 10% 90%;
+  --accent-foreground: 210 10% 20%;
+  --destructive: 0 80% 55%;
+  --destructive-foreground: 0 0% 98%;
+  --border: 215 15% 80%;
+  --input: 215 15% 80%;
+  --ring: 204 60% 50%;
+  --chart-1: 204 60% 50%;
+  --chart-2: 210 40% 60%;
+  --chart-3: 220 70% 50%;
+  --chart-4: 192 50% 60%;
+  --chart-5: 240 25% 50%;
+  --sidebar: 220 15% 92%;
+  --sidebar-foreground: 210 10% 38%;
+  --sidebar-primary: 204 60% 47%;
+  --sidebar-primary-foreground: 204 80% 100%;
+  --sidebar-accent: 215 10% 87%;
+  --sidebar-accent-foreground: 210 10% 20%;
+  --sidebar-border: 215 15% 77%;
+  --sidebar-ring: 204 60% 47%;
 }
 
 .dark {
-  --background: 20 20% 10%;
-  --foreground: 15 60% 85%;
-  --card: 20 20% 10%;
-  --card-foreground: 15 60% 85%;
-  --popover: 20 20% 10%;
-  --popover-foreground: 15 60% 85%;
-  --primary: 15 70% 50%;
-  --primary-foreground: 15 80% 98%;
-  --secondary: 30 80% 40%;
-  --secondary-foreground: 30 60% 85%;
-  --muted: 20 15% 20%;
-  --muted-foreground: 20 30% 60%;
-  --accent: 20 15% 20%;
-  --accent-foreground: 15 60% 85%;
-  --destructive: 0 75% 50%;
-  --destructive-foreground: 0 10% 95%;
-  --border: 20 20% 30%;
-  --input: 20 20% 30%;
-  --ring: 15 70% 50%;
-  --radius: 0.625rem;
-  --chart-1: 15 70% 50%;
-  --chart-2: 30 70% 50%;
-  --chart-3: 340 60% 60%;
-  --chart-4: 60 60% 45%;
-  --chart-5: 300 70% 55%;
-  --sidebar: 20 20% 2%;
-  --sidebar-foreground: 15 60% 56%;
-  --sidebar-primary: 15 70% 42%;
-  --sidebar-primary-foreground: 15 80% 98%;
-  --sidebar-accent: 20 15% 12%;
-  --sidebar-accent-foreground: 15 60% 85%;
-  --sidebar-border: 20 20% 22%;
-  --sidebar-ring: 15 70% 42%;
+  --background: 220 15% 10%;
+  --foreground: 204 50% 90%;
+  --card: 220 15% 10%;
+  --card-foreground: 204 50% 90%;
+  --popover: 220 15% 10%;
+  --popover-foreground: 204 50% 90%;
+  --primary: 204 60% 50%;
+  --primary-foreground: 204 80% 95%;
+  --secondary: 215 15% 30%;
+  --secondary-foreground: 204 50% 80%;
+  --muted: 215 10% 20%;
+  --muted-foreground: 210 40% 70%;
+  --accent: 215 10% 20%;
+  --accent-foreground: 204 50% 90%;
+  --destructive: 0 80% 50%;
+  --destructive-foreground: 204 90% 95%;
+  --border: 215 15% 30%;
+  --input: 215 15% 30%;
+  --ring: 204 60% 50%;
+  --chart-1: 210 50% 40%;
+  --chart-2: 204 80% 50%;
+  --chart-3: 220 60% 50%;
+  --chart-4: 192 40% 50%;
+  --chart-5: 240 25% 60%;
+  --sidebar: 220 15% 2%;
+  --sidebar-foreground: 204 50% 50%;
+  --sidebar-primary: 204 60% 42%;
+  --sidebar-primary-foreground: 204 80% 100%;
+  --sidebar-accent: 215 10% 12%;
+  --sidebar-accent-foreground: 204 50% 90%;
+  --sidebar-border: 215 15% 22%;
+  --sidebar-ring: 204 60% 42%;
 }
 
 @theme inline {
@@ -123,4 +125,17 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+html {
+  font-family: monospace;
+
+  ::selection {
+    color: hsl(204 60% 50%);
+    background-color: hsl(220 15% 5%);
+  }
+}
+
+h1, h2, h3 {
+  color: hsl(204 80% 40%);
 }

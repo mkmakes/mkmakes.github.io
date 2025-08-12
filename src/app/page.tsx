@@ -6,15 +6,11 @@ const Home = () => {
   return (
     <>
       <header>
-        <h1>
-          <em>mk</em>.codes here
-        </h1>
+        <h1>mk.codes here</h1>
         <p>
-          <strong>
-            <em>mk</em>
-          </strong>{' '}
-          codes neat things with Typescript, Node, React, and Native too! From
-          frontend architecture, to backend development, everything is 👌.
+          <strong>mk</strong> codes neat things with Typescript, Node, React,
+          and Native too! From frontend architecture, to backend development,
+          everything is 👌.
         </p>
       </header>
       <h2>He&rsquo;s been building cool things for a while</h2>
@@ -55,7 +51,7 @@ const Home = () => {
       <p>Where will he end up in Kiwiland?</p>
       <hr />
       <h2>
-        Contact <em>mk</em>.codes
+        Contact <strong>mk.codes</strong>
       </h2>
       <p>Here are some of the ways you can reach him.</p>
       <PrimaryButton>Email</PrimaryButton>

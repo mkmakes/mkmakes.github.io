@@ -27,7 +27,7 @@ const RootLayout = ({
           enableSystem
           disableTransitionOnChange
         >
-          <ModeToggle className='absolute top-0 right-0 p-10' />
+          <ModeToggle className='fixed top-0 right-0 p-10' />
           <div
             className={`
               m-auto prose py-40 prose-stone
