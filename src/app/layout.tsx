@@ -27,10 +27,10 @@ const RootLayout = ({
           enableSystem
           disableTransitionOnChange
         >
-          <ModeToggle className='fixed top-0 right-0 p-10' />
+          <ModeToggle className='fixed right-6 bottom-6' />
           <div
             className={`
-              m-auto prose py-40 prose-stone
+              m-auto prose px-8 py-40 prose-stone
               dark:prose-invert
             `}
           >

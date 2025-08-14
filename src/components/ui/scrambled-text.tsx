@@ -1,7 +1,7 @@
 'use client'
 
 import * as React from 'react'
-import { useEffect, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 
 import { getRandomString } from '@/lib/helpers/get-random-string'
 
@@ -21,6 +21,11 @@ const ScrambledText = ({
 }: ScrambledTextProps) => {
   const [scrambledText, setScrambledText] = useState('')
   const [, setCurrentIndex] = useState(0)
+  const [rescramble, setRescramble] = useState(false)
+
+  const handleMouseLeave = useMemo(() => {
+    return () => setRescramble((rescramble) => !rescramble)
+  }, [])
 
   useEffect(() => {
     const initialScrambledText = getRandomString(text.length)
@@ -30,7 +35,10 @@ const ScrambledText = ({
       setCurrentIndex((prevIndex) => {
         const currentIndex = prevIndex + 1
         const totalRounds = text.length + initialScrambles
-        if (currentIndex >= totalRounds) clearInterval(scrambleInterval)
+        if (currentIndex >= totalRounds) {
+          setCurrentIndex(0)
+          clearInterval(scrambleInterval)
+        }
 
         const currentTextIndex = currentIndex - initialScrambles
         if (currentTextIndex >= 0) {
@@ -47,9 +55,9 @@ const ScrambledText = ({
     }, scrambleTime)
 
     return () => clearInterval(scrambleInterval)
-  }, [text, initialScrambles, scrambleTime])
+  }, [text, initialScrambles, scrambleTime, rescramble])
 
-  return <>{scrambledText}</>
+  return <span onMouseLeave={handleMouseLeave}>{scrambledText}</span>
 }
 
 export { ScrambledText }

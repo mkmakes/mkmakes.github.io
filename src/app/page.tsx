@@ -8,8 +8,8 @@ const Home = () => {
   return (
     <>
       <header>
-        <GradientHeader>
-          {'> '}
+        <GradientHeader className='flex gap-8'>
+          {'>'}
           <ScrambledText text='mk.codes here' />
         </GradientHeader>
         <p>
