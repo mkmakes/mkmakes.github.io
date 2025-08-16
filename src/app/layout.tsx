@@ -29,7 +29,6 @@ const RootLayout = ({
           disableTransitionOnChange
         >
           <GridBg />
-          <ModeToggle className='fixed right-6 bottom-6' />
           <div
             className={`
               relative z-10 m-auto prose px-8 py-40 prose-stone
@@ -38,6 +37,7 @@ const RootLayout = ({
           >
             {children}
           </div>
+          <ModeToggle className='fixed right-6 bottom-6 z-20' />
         </ThemeProvider>
       </body>
     </html>
