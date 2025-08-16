@@ -4,6 +4,7 @@ import * as React from 'react'
 import { useEffect, useMemo, useState } from 'react'
 
 import { getRandomString } from '@/lib/helpers/get-random-string'
+import { cn } from '@/lib/utils'
 
 const INITIAL_SCRAMBLES = 25
 const SCRAMBLE_INTERVAL_MS = 65
@@ -22,6 +23,7 @@ const ScrambledText = ({
   const [scrambledText, setScrambledText] = useState('')
   const [, setCurrentIndex] = useState(0)
   const [rescramble, setRescramble] = useState(false)
+  const [showCursor, setShowCursor] = useState(false)
 
   const handleRescramble = useMemo(() => {
     return () => {
@@ -39,6 +41,7 @@ const ScrambledText = ({
         const totalRounds = text.length + initialScrambles
         if (currentIndex >= totalRounds) {
           setCurrentIndex(0)
+          setShowCursor(true)
           clearInterval(scrambleInterval)
         }
 
@@ -50,6 +53,7 @@ const ScrambledText = ({
           )
           setScrambledText(`${correctText}${scrambledText}`)
         } else {
+          setShowCursor(false)
           setScrambledText(getRandomString(text.length))
         }
         return currentIndex
@@ -65,6 +69,17 @@ const ScrambledText = ({
       onClick={handleRescramble}
     >
       {scrambledText}
+      <span
+        className={cn({
+          visible: showCursor,
+          hidden: !showCursor,
+        })}
+        style={{
+          animation: `blink 1.5s steps(2, start) infinite`,
+        }}
+      >
+        _
+      </span>
     </span>
   )
 }

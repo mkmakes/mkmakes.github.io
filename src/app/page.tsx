@@ -8,17 +8,17 @@ import { ScrambledText } from '@/components/ui/scrambled-text'
 const Home = () => {
   return (
     <>
-      <header>
-        <GradientHeader className='flex gap-8'>
+      <header className='sticky top-40 bg-neutral-800'>
+        <GradientHeader className='flex gap-8 p-4'>
           {'>'}
           <ScrambledText text='mk.codes here' />
         </GradientHeader>
-        <p>
-          <strong>mk</strong> codes neat things with Typescript, Node, React,
-          and Native too! From frontend architecture, to backend development,
-          everything is 👌.
-        </p>
       </header>
+      <p>
+        <strong>mk</strong> codes neat things with Typescript, Node, React, and
+        Native too! From frontend architecture, to backend development,
+        everything is 👌.
+      </p>
       <h2>He&rsquo;s been building cool things for a while</h2>
       <p>
         <strong>

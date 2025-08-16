@@ -139,3 +139,9 @@ html {
 h1, h2, h3 {
   color: hsl(204 80% 40%);
 }
+
+@keyframes blink {
+  to {
+    visibility: hidden;
+  }
+}
