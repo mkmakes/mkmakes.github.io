@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { ThemeProvider } from 'next-themes'
 
+import { GridBg } from '@/components/ui/grid-bg'
 import { ModeToggle } from '@/components/ui/mode-toggle'
 
 import './globals.css'
@@ -27,10 +28,11 @@ const RootLayout = ({
           enableSystem
           disableTransitionOnChange
         >
+          <GridBg />
           <ModeToggle className='fixed right-6 bottom-6' />
           <div
             className={`
-              m-auto prose px-8 py-40 prose-stone
+              relative z-10 m-auto prose px-8 py-40 prose-stone
               dark:prose-invert
             `}
           >

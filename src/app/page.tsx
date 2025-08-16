@@ -2,6 +2,7 @@ import * as React from 'react'
 
 import { PrimaryButton } from '@/components/ui/button/primary-button'
 import { GradientHeader } from '@/components/ui/gradient-header'
+import { Hr } from '@/components/ui/hr'
 import { ScrambledText } from '@/components/ui/scrambled-text'
 
 const Home = () => {
@@ -41,7 +42,7 @@ const Home = () => {
       </ul>
       <h3>And of course, the learning never stops</h3>
       <p>Not to mention, there&rsquo;s more stuff he simply forgot to list!</p>
-      <hr />
+      <Hr />
       <h2>Firespring, Creative Department</h2>
       <p>Full Stack Software Engineer</p>
       <h2>LI-COR, Engineering</h2>
@@ -54,7 +55,7 @@ const Home = () => {
       <p>Full Stack Project Engineer</p>
       <h3>Now, he&rsquo;s back in New Zealand</h3>
       <p>Where will he end up in Kiwiland?</p>
-      <hr />
+      <Hr />
       <h2>
         Contact <strong>mk.codes</strong>
       </h2>

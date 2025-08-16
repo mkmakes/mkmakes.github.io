@@ -23,8 +23,10 @@ const ScrambledText = ({
   const [, setCurrentIndex] = useState(0)
   const [rescramble, setRescramble] = useState(false)
 
-  const handleMouseLeave = useMemo(() => {
-    return () => setRescramble((rescramble) => !rescramble)
+  const handleRescramble = useMemo(() => {
+    return () => {
+      setRescramble((rescramble) => !rescramble)
+    }
   }, [])
 
   useEffect(() => {
@@ -57,7 +59,14 @@ const ScrambledText = ({
     return () => clearInterval(scrambleInterval)
   }, [text, initialScrambles, scrambleTime, rescramble])
 
-  return <span onMouseLeave={handleMouseLeave}>{scrambledText}</span>
+  return (
+    <span
+      onMouseLeave={handleRescramble}
+      onClick={handleRescramble}
+    >
+      {scrambledText}
+    </span>
+  )
 }
 
 export { ScrambledText }
