@@ -6,6 +6,8 @@ import throttle from 'lodash.throttle'
 
 import { getScrollPercentage } from '@/lib/helpers/get-scroll-percentage'
 
+const SCROLL_TRANSLATE_DAMPEN_X = 20
+
 const GridBg = () => {
   const [translate, setTranslate] = useState({
     x: 0,
@@ -39,7 +41,8 @@ const GridBg = () => {
     }
   }, [])
 
-  const xTranslate = translate.x
+  const scrollTranslateX = scrollTranslate / SCROLL_TRANSLATE_DAMPEN_X
+  const xTranslate = translate.x + scrollTranslateX
   const yTranslate = translate.y + scrollTranslate
 
   return (
