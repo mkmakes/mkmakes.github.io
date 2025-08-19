@@ -1,4 +1,5 @@
 import * as React from 'react'
+import Image from 'next/image'
 
 import { PrimaryButton } from '@/components/ui/button/primary-button'
 import { GradientHeader } from '@/components/ui/gradient-header'
@@ -9,9 +10,19 @@ const Home = () => {
   return (
     <>
       <header className='sticky top-40 bg-neutral-800'>
-        <GradientHeader className='flex gap-8 p-4'>
-          {'>'}
-          <ScrambledText text='mk.codes here' />
+        <GradientHeader className='flex items-center gap-2 p-4'>
+          <Image
+            className='m-0! rounded-full'
+            src='/profile.jpg'
+            alt='MK profile image'
+            width={50}
+            height={50}
+            priority
+          />
+          <span className='flex gap-8'>
+            {'>'}
+            <ScrambledText text='mk.codes here' />
+          </span>
         </GradientHeader>
       </header>
       <p>

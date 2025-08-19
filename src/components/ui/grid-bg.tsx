@@ -26,7 +26,7 @@ const GridBg = () => {
     const throttledHandleMouseMove = throttle(handleMouseMove, 40)
 
     const handleScroll = () => {
-      const MOVEMENT_MAX = 200
+      const MOVEMENT_MAX = 300
       const scrollPercentage = getScrollPercentage()
       const scrollParallax = (MOVEMENT_MAX * scrollPercentage) / 100
       setScrollTranslate(scrollParallax)
