@@ -13,7 +13,7 @@ const GradientHeader = ({
       className={cn(
         `
           bg-gradient-to-r from-green-500 via-blue-500 to-violet-500
-          bg-clip-text text-transparent!
+          bg-clip-text text-2xl text-transparent!
         `,
         className
       )}

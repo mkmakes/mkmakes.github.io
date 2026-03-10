@@ -31,8 +31,8 @@ const RootLayout = ({
           <GridBg />
           <div
             className={`
-              relative z-10 m-auto prose px-8 py-40 prose-stone
-              dark:prose-invert
+              relative z-10 m-auto flex h-dvh flex-col items-center
+              justify-center px-8 py-40
             `}
           >
             {children}
