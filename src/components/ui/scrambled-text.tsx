@@ -19,7 +19,9 @@ const ScrambledText = ({
   initialScrambles = INITIAL_SCRAMBLES,
   scrambleTime = SCRAMBLE_INTERVAL_MS,
 }: ScrambledTextProps) => {
-  const [scrambledText, setScrambledText] = useState('')
+  const [scrambledText, setScrambledText] = useState(
+    Array(text.length).join('*')
+  )
   const [, setCurrentIndex] = useState(0)
   const [rescramble, setRescramble] = useState(false)
   const [showCursor, setShowCursor] = useState(false)
